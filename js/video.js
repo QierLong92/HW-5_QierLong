@@ -36,6 +36,7 @@ window.addEventListener("load", function () {
 	this.document.getElementById("mute").addEventListener("click", function() {
 			video.muted = !video.muted;
 			this.textContent = video.muted ? "Unmute" : "Mute";
+			console.log(video.muted ? "Muted" : "Unmuted");
 	});
 
 	/*volume slider*/
