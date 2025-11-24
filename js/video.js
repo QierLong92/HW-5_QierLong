@@ -9,6 +9,7 @@ window.addEventListener("load", function () {
 	this.document.getElementById("play").addEventListener("click", function () {
 		video.play();
 		console.log("Play Video");
+		document.getElementById("volume").innerText = (video.volume * 100) + "%";
 	});
 	this.document.getElementById("pause").addEventListener("click", function () {
 		video.pause();
